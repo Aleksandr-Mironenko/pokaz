@@ -1,0 +1,64 @@
+.footer a:link,
+.footer a:visited,
+.footer a:hover {
+  text-decoration: none;
+  color: #7e7e82;
+  font-family: "TT Lakes medium", serif, "Times New Roman", Times, serif;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  font-family: "TT Lakes", serif, "Times New Roman", Times, serif;
+  line-height: 16px;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  color: #7e7e82;
+  border-top: 1px solid #d9fff5;
+}
+
+.footer__items {
+  margin: 16px 4px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 32px 24px 41px 24px;
+    align-items: flex-start;
+  }
+
+  .footer__items {
+    width: 33.3%;
+    margin: 0;
+  }
+
+  .footer__copy {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer__offerta {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1120px) {
+  .footer {
+    max-width: 1121px;
+    margin: 0 auto;
+    padding: 32px 32px 22px 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    margin: 0 0 0 auto;
+  }
+}

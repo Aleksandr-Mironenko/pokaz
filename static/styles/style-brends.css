@@ -1,0 +1,195 @@
+.brends a:link,
+.brends a:visited,
+.brends a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.brends {
+  max-width: 1121px;
+  background-color: #f8f8f8;
+  font-family: "TT Lakes", serif, "Times New Roman", Times, serif;
+  line-height: 24px;
+  margin: 0 auto;
+}
+
+.container-brends__title--modifier {
+  display: block;
+  border-top: 1px solid #d9fff5;
+  padding: 16px;
+  min-width: 100%;
+  background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+  text-transform: uppercase;
+  color: #7e7e82;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.swiper--modifier-brends {
+  margin: 16px 0 16px 16px;
+}
+
+.swiper-wrapper--modifier-brends {
+  min-height: 110px;
+  padding: 0 auto;
+}
+
+.swiper-slide--modifier-brends {
+  position: relative;
+  width: 240px;
+  height: 70px;
+  border: 2px solid #eaeaea;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.swiper-slide--modifier-brends::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff3e79;
+  border-radius: 50%;
+  background-image: url("../files/after/dropdown.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.swiper-image {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 20px;
+  width: auto;
+  height: auto;
+}
+
+.brends .swiper-pagination {
+  text-align: center;
+}
+
+.brends .swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+.brends .swiper-pagination-bullet {
+  background-color: #dddddd;
+}
+
+.container-brends__movie-all--modifier {
+  display: none;
+  position: relative;
+  margin: 16px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #f8f8f8;
+  padding: auto;
+}
+
+.container-brends__movie-all_arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.open-brends {
+  background-image: url("../files/movie-al/down.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform: translateY(25%);
+}
+
+.closed-brends {
+  background-image: url("../files/movie-al/up.png");
+  background-repeat: no-repeat;
+  transform: translateY(25%);
+}
+
+.container-brends__movie-all_text {
+  display: inline-block;
+  font-family: "TT Lakes medium", serif, "Times New Roman", Times, serif;
+}
+
+@media (min-width: 768px) {
+  .container-brends__title--modifier {
+    padding-left: 24px;
+  }
+
+  .swiper--modifier-brends {
+    margin: 16px 0;
+  }
+
+  .swiper-wrapper--modifier-brends {
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    justify-content: space-evenly;
+    row-gap: 16px;
+    min-height: 0;
+    /* padding: auto; */
+  }
+
+  .swiper-slide--modifier-brends {
+    width: 224px;
+    margin: auto;
+  }
+
+  .hidden-click-768-brends,
+  .hidden-click-1120-brends {
+    display: none;
+  }
+
+  .container-brends__movie-all--modifier {
+    margin-left: 24px;
+    display: block;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) {
+  .brends {
+    max-width: 1121px;
+    margin: 0 auto;
+  }
+
+  .container-brends__title--modifier {
+    padding-left: 32px;
+  }
+
+  .swiper--modifier-brends {
+    margin: 16px 0;
+  }
+  .swiper-wrapper--modifier-brends {
+    grid-template-columns: repeat(4, 240px);
+    max-width: 1121px;
+  }
+
+  .swiper-slide--modifier-brends {
+    width: 240px;
+  }
+
+  .hidden-click-768-brends {
+    display: block;
+  }
+
+  .hidden-click-1120-brends {
+    display: none;
+  }
+
+  .container-brends__movie-all--modifier {
+    border: none;
+    margin-left: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .brends {
+    margin: 0 0 0 auto;
+  }
+}

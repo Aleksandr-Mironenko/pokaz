@@ -1,0 +1,154 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main-container--modifier {
+  background-color: #f8f8f8;
+}
+
+.main-container__title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container__title--modifier {
+  height: 40px;
+  margin: 24px 0;
+}
+
+.main-container__navigation {
+  margin-bottom: 24px;
+  max-height: 130px;
+}
+
+.main-container__left-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-container__title-text--modifier {
+  font-size: 28px;
+  line-height: 40px;
+  margin-left: 16px;
+  letter-spacing: -0.6px;
+  font-family: "TT Lakes black", serif, "Times New Roman", Times, serif;
+}
+
+.main-container__title-text::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 4px;
+  height: 100%;
+  border: 1px solid #41f6d7;
+  border-radius: 0 4px 4px 0;
+  background-color: #41f6d7;
+}
+
+.main-container__scroll-menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-container__scroll-menu--modifier {
+  margin-left: 16px;
+  white-space: nowrap;
+  overflow-x: auto;
+  list-style-type: none;
+}
+
+.main-container__side-item--modifier {
+  display: block;
+  text-wrap: nowrap;
+  padding: 6px 17px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-container__side-item:focus {
+  border: 2px solid #41f6d7;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.main-container__information-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.main-container__information-block--modifier {
+  min-height: 322px;
+}
+
+.main-container__information-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-container__information-text--modifier {
+  max-height: 114px;
+}
+
+.main-container__text--modifier {
+  margin: 0 auto;
+  line-height: 18px;
+  font-size: 16px;
+  padding: 0 calc(100vw / 20);
+  letter-spacing: 0.2px;
+  overflow: hidden;
+  margin: auto 0;
+  font-size: 14px;
+}
+
+.main-container__text-more {
+  align-self: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.main-container__text-more--modifier {
+  font-family: "TT Lakes medium", serif, "Times New Roman", Times, serif;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  border: 0;
+  border-radius: 0;
+  background: #f8f8f8;
+  padding: 0 calc(100vw / 20);
+}
+
+.main-container__image--modifier {
+  width: 100%;
+  max-width: 438px;
+  margin: 0 auto;
+}
+.open-image {
+  background-image: url("../files/movie-al/down.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.closed-image {
+  background-image: url("../files/movie-al/up.png");
+  background-repeat: no-repeat;
+}
+.container__movie-all_arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.container__movie-all_text {
+  display: inline-block;
+}
